@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plantas Medicinales</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Plantas Medicinales Tradicionales</h1>
+</header>
+
+<nav>
+  <a href="#">Inicio</a>
+  <a href="#">Plantas</a>
+  <a href="#">Recetas</a>
+  <a href="#">Contacto</a>
+</nav>
+
+<section class="search-section">
+  <form action="#" method="get">
+    <input type="text" placeholder="¿Qué planta o propiedad deseas consultar?" name="search">
+    <button type="submit">Buscar</button>
+  </form>
+</section>
+
+<div class="content">
+
+  <section class="plant-index">
+    <strong>Índice de Plantas:</strong><br>
+    <a href="#planta1">Planta 1</a>
+    <a href="#planta2">Planta 2</a>
+    <!-- Agrega más plantas aquí -->
+  </section>
+
+  <!-- Planta 1 -->
+  <button class="accordion" id="planta1">Nombre Común de la Planta 1</button>
+  <div class="panel">
+    <section class="plant-images">
+      <img src="foto1.jpg" alt="Foto de la planta">
+      <img src="foto2.jpg" alt="Otra foto de la planta">
+    </section>
+
+    <section>
+      <h3>Identificación</h3>
+      <p><strong>Nombre Científico:</strong> Nombre científico aquí</p>
+      <p>Descripción breve de cómo identificar la planta: hojas, flores, tallo, etc.</p>
+    </section>
+
+    <section>
+      <h3>Descripción General</h3>
+      <p>Un poco de historia, hábitat, dónde crece naturalmente y su uso cultural en las comunidades indígenas del Cauca.</p>
+    </section>
+
+    <section>
+      <h3>Propiedades Medicinales</h3>
+      <p>Lista de propiedades medicinales conocidas: para qué enfermedades o síntomas sirve.</p>
+    </section>
+
+    <section>
+      <h3>Recetas Médicas Tradicionales</h3>
+      <p><strong>Tribu de origen:</strong> Nombre del pueblo indígena del Cauca.</p>
+      <p>Receta 1: preparación, dosis, cómo se aplica o toma.</p>
+    </section>
+
+    <section>
+      <h3>Advertencias o Precauciones</h3>
+      <p>Información importante sobre el uso seguro de la planta.</p>
+    </section>
+  </div>
+
+  <!-- Planta 2 -->
+  <button class="accordion" id="planta2">Nombre Común de la Planta 2</button>
+  <div class="panel">
+    <!-- Aquí repite los contenidos de la planta 1 -->
+  </div>
+
+</div>
+
+<footer>
+  Proyecto de Conservación y Saberes Ancestrales
+</footer>
+
+<script>
+  const accordions = document.querySelectorAll(".accordion");
+  accordions.forEach(acc => {
+    acc.addEventListener("click", function() {
+      this.classList.toggle("active");
+      const panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
