@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recetas Tradicionales</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Recetas Médicas Tradicionales</h1>
+</header>
+
+<nav>
+  <a href="#">Inicio</a>
+  <a href="#">Plantas</a>
+  <a href="#">Recetas</a>
+  <a href="#">Contacto</a>
+</nav>
+
+<section class="search-section">
+  <form action="#" method="get">
+    <input type="text" placeholder="¿Qué receta o planta deseas consultar?" name="search">
+    <button type="submit">Buscar</button>
+  </form>
+</section>
+
+<div class="content">
+
+  <section class="recipe-index">
+    <strong>Índice de Recetas:</strong><br>
+    <a href="#receta1">Receta 1</a>
+    <a href="#receta2">Receta 2</a>
+  </section>
+
+  <!-- Receta 1 -->
+  <button class="accordion" id="receta1">Receta 1: Nombre de la receta</button>
+  <div class="panel">
+    <h2>Ingredientes <img src="icono-ingredientes.png" alt="Ingredientes" width="20"></h2>
+    <ul>
+      <li>Ingrediente 1</li>
+      <li>Ingrediente 2</li>
+    </ul>
+
+    <h2>Variaciones</h2>
+    <div class="variation-card">
+      <h3>Variación 1: Nombre</h3>
+      <p>Ingredientes:</p>
+      <ul>
+        <li>Ingrediente A</li>
+        <li>Ingrediente B</li>
+      </ul>
+    </div>
+
+    <div class="variation-card">
+      <h3>Variación 2: Nombre</h3>
+      <p>Ingredientes:</p>
+      <ul>
+        <li>Ingrediente C</li>
+        <li>Ingrediente D</li>
+      </ul>
+    </div>
+
+    <h2>Descripción <img src="icono-descripcion.png" alt="Descripción" width="20"></h2>
+    <p>Explicación de qué hace esta receta.</p>
+
+    <h2>Pasos a seguir <img src="icono-pasos.png" alt="Pasos" width="20"></h2>
+    <ol>
+      <li>Primer paso de preparación.</li>
+      <li>Segundo paso de preparación.</li>
+    </ol>
+
+    <h2>Precauciones <img src="icono-alerta.png" alt="Precauciones" width="20"></h2>
+    <p>Advertencias importantes.</p>
+
+    <h2>Notas adicionales</h2>
+    <p>Consejos o tips extra.</p>
+  </div>
+
+  <!-- Receta 2 -->
+  <button class="accordion" id="receta2">Receta 2: Otro nombre de receta</button>
+  <div class="panel">
+    <h2>Ingredientes</h2>
+    <ul>
+      <li>Ingrediente 1</li>
+      <li>Ingrediente 2</li>
+    </ul>
+
+    <h2>Variaciones</h2>
+    <div class="variation-card">
+      <h3>Variación única</h3>
+      <ul>
+        <li>Ingrediente A</li>
+      </ul>
+    </div>
+
+    <h2>Descripción</h2>
+    <p>Beneficios de esta receta tradicional.</p>
+
+    <h2>Pasos a seguir</h2>
+    <ol>
+      <li>Primer paso.</li>
+      <li>Segundo paso.</li>
+    </ol>
+
+    <h2>Precauciones</h2>
+    <p>Recomendaciones de uso seguro.</p>
+
+    <h2>Notas adicionales</h2>
+    <p>Consejos para un mejor resultado.</p>
+  </div>
+
+</div>
+
+<footer>
+  Proyecto de Conservación y Saberes Ancestrales
+</footer>
+
+<script>
+  const accordions = document.querySelectorAll(".accordion");
+  accordions.forEach(acc => {
+    acc.addEventListener("click", function() {
+      this.classList.toggle("active");
+      const panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
