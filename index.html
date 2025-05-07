@@ -12,20 +12,18 @@
 <header>
   <h1>Plantas Medicinales Tradicionales</h1>
 </header>
-
-<nav>
-  <a href="#">Inicio</a>
-  <a href="#">Plantas</a>
-  <a href="#">Recetas</a>
-  <a href="#">Contacto</a>
-</nav>
-
 <section class="search-section">
   <form action="#" method="get">
     <input type="text" placeholder="¿Qué planta o propiedad deseas consultar?" name="search">
     <button type="submit">Buscar</button>
   </form>
 </section>
+<nav>
+  <a href="#">Inicio</a>
+  <a href="#">Plantas</a>
+  <a href="#">Recetas</a>
+  <a href="#">Contacto</a>
+</nav>
 
 <div class="content">
 
@@ -36,48 +34,310 @@
     <!-- Agrega más plantas aquí -->
   </section>
 
-  <!-- Planta 1 -->
-  <button class="accordion" id="planta1">Nombre Común de la Planta 1</button>
-  <div class="panel">
-    <section class="plant-images">
-      <img src="foto1.jpg" alt="Foto de la planta">
-      <img src="foto2.jpg" alt="Otra foto de la planta">
-    </section>
+  <div class="recetas-grid">
 
-    <section>
-      <h3>Identificación</h3>
-      <p><strong>Nombre Científico:</strong> Nombre científico aquí</p>
-      <p>Descripción breve de cómo identificar la planta: hojas, flores, tallo, etc.</p>
-    </section>
+    <div class="receta-item">
+      <button class="accordion cuadrado" data-panel="panel1">
+        <div class="planta-contenedor">
+          <img src="imag/th.jpg" alt="Aloe Vera" class="planta-icono">
+          <span class="planta-nombre">Receta con contenido completo</span>
+        </div>
+      </button>
+  
+      <div class="panel" id="panel1">
+        <section class="plant-images">
+          <img src="foto1.jpg" alt="Foto de la planta">
+          <img src="foto2.jpg" alt="Otra foto de la planta">
+        </section>
+  
+        <section>
+          <h3>Identificación</h3>
+          <p><strong>Nombre Científico:</strong> Nombre científico aquí</p>
+          <p>Descripción breve de cómo identificar la planta: hojas, flores, tallo, etc.</p>
+        </section>
+  
+        <section>
+          <h3>Descripción General</h3>
+          <p>Un poco de historia, hábitat, dónde crece naturalmente y su uso cultural en las comunidades indígenas del Cauca.</p>
+        </section>
+  
+        <section>
+          <h3>Propiedades Medicinales</h3>
+          <p>Lista de propiedades medicinales conocidas: para qué enfermedades o síntomas sirve.</p>
+        </section>
+  
+        <section>
+          <h3>Recetas Médicas Tradicionales</h3>
+          <p><strong>Tribu de origen:</strong> Nombre del pueblo indígena del Cauca.</p>
+          <p>Receta 1: preparación, dosis, cómo se aplica o toma.</p>
+        </section>
+  
+        <section>
+          <h3>Advertencias o Precauciones</h3>
+          <p>Información importante sobre el uso seguro de la planta.</p>
+        </section>
+      </div>
+    </div>
+  
 
-    <section>
-      <h3>Descripción General</h3>
-      <p>Un poco de historia, hábitat, dónde crece naturalmente y su uso cultural en las comunidades indígenas del Cauca.</p>
-    </section>
 
-    <section>
-      <h3>Propiedades Medicinales</h3>
-      <p>Lista de propiedades medicinales conocidas: para qué enfermedades o síntomas sirve.</p>
-    </section>
+    <div class="receta-item">
+      <button class="accordion cuadrado" data-panel="panel2">
+        <div class="planta-contenedor">
+          <img src="imag/th.jpg" alt="Aloe Vera" class="planta-icono">
+          <span class="planta-nombre">Receta con contenido completo</span>
+        </div>
+      </button>
+  
+      <div class="panel" id="panel2">
+        <section class="plant-images">
+          <img src="foto1.jpg" alt="Foto de la planta">
+          <img src="foto2.jpg" alt="Otra foto de la planta">
+        </section>
+  
+        <section>
+          <h3>Identificación</h3>
+          <p><strong>Nombre Científico:</strong> Nombre científico aquí</p>
+          <p>Descripción breve de cómo identificar la planta: hojas, flores, tallo, etc.</p>
+        </section>
+  
+        <section>
+          <h3>Descripción General</h3>
+          <p>Un poco de historia, hábitat, dónde crece naturalmente y su uso cultural en las comunidades indígenas del Cauca.</p>
+        </section>
+  
+        <section>
+          <h3>Propiedades Medicinales</h3>
+          <p>Lista de propiedades medicinales conocidas: para qué enfermedades o síntomas sirve.</p>
+        </section>
+  
+        <section>
+          <h3>Recetas Médicas Tradicionales</h3>
+          <p><strong>Tribu de origen:</strong> Nombre del pueblo indígena del Cauca.</p>
+          <p>Receta 1: preparación, dosis, cómo se aplica o toma.</p>
+        </section>
+  
+        <section>
+          <h3>Advertencias o Precauciones</h3>
+          <p>Información importante sobre el uso seguro de la planta.</p>
+        </section>
+      </div>
+    </div>
 
-    <section>
-      <h3>Recetas Médicas Tradicionales</h3>
-      <p><strong>Tribu de origen:</strong> Nombre del pueblo indígena del Cauca.</p>
-      <p>Receta 1: preparación, dosis, cómo se aplica o toma.</p>
-    </section>
 
-    <section>
-      <h3>Advertencias o Precauciones</h3>
-      <p>Información importante sobre el uso seguro de la planta.</p>
-    </section>
+    <div class="receta-item">
+      <button class="accordion cuadrado" data-panel="panel2">
+        <div class="planta-contenedor">
+          <img src="imag/th.jpg" alt="Aloe Vera" class="planta-icono">
+          <span class="planta-nombre">Receta con contenido completo</span>
+        </div>
+      </button>
+  
+      <div class="panel" id="panel2">
+        <section class="plant-images">
+          <img src="foto1.jpg" alt="Foto de la planta">
+          <img src="foto2.jpg" alt="Otra foto de la planta">
+        </section>
+  
+        <section>
+          <h3>Identificación</h3>
+          <p><strong>Nombre Científico:</strong> Nombre científico aquí</p>
+          <p>Descripción breve de cómo identificar la planta: hojas, flores, tallo, etc.</p>
+        </section>
+  
+        <section>
+          <h3>Descripción General</h3>
+          <p>Un poco de historia, hábitat, dónde crece naturalmente y su uso cultural en las comunidades indígenas del Cauca.</p>
+        </section>
+  
+        <section>
+          <h3>Propiedades Medicinales</h3>
+          <p>Lista de propiedades medicinales conocidas: para qué enfermedades o síntomas sirve.</p>
+        </section>
+  
+        <section>
+          <h3>Recetas Médicas Tradicionales</h3>
+          <p><strong>Tribu de origen:</strong> Nombre del pueblo indígena del Cauca.</p>
+          <p>Receta 1: preparación, dosis, cómo se aplica o toma.</p>
+        </section>
+  
+        <section>
+          <h3>Advertencias o Precauciones</h3>
+          <p>Información importante sobre el uso seguro de la planta.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="receta-item">
+      <button class="accordion cuadrado" data-panel="panel2">
+        <div class="planta-contenedor">
+          <img src="imag/th.jpg" alt="Aloe Vera" class="planta-icono">
+          <span class="planta-nombre">Receta con contenido completo</span>
+        </div>
+      </button>
+  
+      <div class="panel" id="panel2">
+        <section class="plant-images">
+          <img src="foto1.jpg" alt="Foto de la planta">
+          <img src="foto2.jpg" alt="Otra foto de la planta">
+        </section>
+  
+        <section>
+          <h3>Identificación</h3>
+          <p><strong>Nombre Científico:</strong> Nombre científico aquí</p>
+          <p>Descripción breve de cómo identificar la planta: hojas, flores, tallo, etc.</p>
+        </section>
+  
+        <section>
+          <h3>Descripción General</h3>
+          <p>Un poco de historia, hábitat, dónde crece naturalmente y su uso cultural en las comunidades indígenas del Cauca.</p>
+        </section>
+  
+        <section>
+          <h3>Propiedades Medicinales</h3>
+          <p>Lista de propiedades medicinales conocidas: para qué enfermedades o síntomas sirve.</p>
+        </section>
+  
+        <section>
+          <h3>Recetas Médicas Tradicionales</h3>
+          <p><strong>Tribu de origen:</strong> Nombre del pueblo indígena del Cauca.</p>
+          <p>Receta 1: preparación, dosis, cómo se aplica o toma.</p>
+        </section>
+  
+        <section>
+          <h3>Advertencias o Precauciones</h3>
+          <p>Información importante sobre el uso seguro de la planta.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="receta-item">
+      <button class="accordion cuadrado" data-panel="panel2">
+        <div class="planta-contenedor">
+          <img src="imag/th.jpg" alt="Aloe Vera" class="planta-icono">
+          <span class="planta-nombre">Receta con contenido completo</span>
+        </div>
+      </button>
+  
+      <div class="panel" id="panel2">
+        <section class="plant-images">
+          <img src="foto1.jpg" alt="Foto de la planta">
+          <img src="foto2.jpg" alt="Otra foto de la planta">
+        </section>
+  
+        <section>
+          <h3>Identificación</h3>
+          <p><strong>Nombre Científico:</strong> Nombre científico aquí</p>
+          <p>Descripción breve de cómo identificar la planta: hojas, flores, tallo, etc.</p>
+        </section>
+  
+        <section>
+          <h3>Descripción General</h3>
+          <p>Un poco de historia, hábitat, dónde crece naturalmente y su uso cultural en las comunidades indígenas del Cauca.</p>
+        </section>
+  
+        <section>
+          <h3>Propiedades Medicinales</h3>
+          <p>Lista de propiedades medicinales conocidas: para qué enfermedades o síntomas sirve.</p>
+        </section>
+  
+        <section>
+          <h3>Recetas Médicas Tradicionales</h3>
+          <p><strong>Tribu de origen:</strong> Nombre del pueblo indígena del Cauca.</p>
+          <p>Receta 1: preparación, dosis, cómo se aplica o toma.</p>
+        </section>
+  
+        <section>
+          <h3>Advertencias o Precauciones</h3>
+          <p>Información importante sobre el uso seguro de la planta.</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="receta-item">
+      <button class="accordion cuadrado" data-panel="panel2">
+        <div class="planta-contenedor">
+          <img src="imag/th.jpg" alt="Aloe Vera" class="planta-icono">
+          <span class="planta-nombre">Receta con contenido completo</span>
+        </div>
+      </button>
+  
+      <div class="panel" id="panel2">
+        <section class="plant-images">
+          <img src="foto1.jpg" alt="Foto de la planta">
+          <img src="foto2.jpg" alt="Otra foto de la planta">
+        </section>
+  
+        <section>
+          <h3>Identificación</h3>
+          <p><strong>Nombre Científico:</strong> Nombre científico aquí</p>
+          <p>Descripción breve de cómo identificar la planta: hojas, flores, tallo, etc.</p>
+        </section>
+  
+        <section>
+          <h3>Descripción General</h3>
+          <p>Un poco de historia, hábitat, dónde crece naturalmente y su uso cultural en las comunidades indígenas del Cauca.</p>
+        </section>
+  
+        <section>
+          <h3>Propiedades Medicinales</h3>
+          <p>Lista de propiedades medicinales conocidas: para qué enfermedades o síntomas sirve.</p>
+        </section>
+  
+        <section>
+          <h3>Recetas Médicas Tradicionales</h3>
+          <p><strong>Tribu de origen:</strong> Nombre del pueblo indígena del Cauca.</p>
+          <p>Receta 1: preparación, dosis, cómo se aplica o toma.</p>
+        </section>
+  
+        <section>
+          <h3>Advertencias o Precauciones</h3>
+          <p>Información importante sobre el uso seguro de la planta.</p>
+        </section>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Puedes duplicar este .receta-item para más recetas -->
   </div>
 
-  <!-- Planta 2 -->
-  <button class="accordion" id="planta2">Nombre Común de la Planta 2</button>
-  <div class="panel">
-    <!-- Aquí repite los contenidos de la planta 1 -->
-  </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 </div>
 
 <footer>
@@ -85,12 +345,18 @@
 </footer>
 
 <script>
-  const accordions = document.querySelectorAll(".accordion");
-  accordions.forEach(acc => {
-    acc.addEventListener("click", function() {
-      this.classList.toggle("active");
-      const panel = this.nextElementSibling;
-      if (panel.style.maxHeight) {
+  document.querySelectorAll(".accordion").forEach(button => {
+    button.addEventListener("click", () => {
+      const panelId = button.getAttribute("data-panel");
+      const panel = document.getElementById(panelId);
+
+      // Cierra todos los paneles
+      document.querySelectorAll(".panel").forEach(p => {
+        if (p !== panel) p.style.maxHeight = null;
+      });
+
+      // Alterna este panel
+      if (panel.style.maxHeight && panel.style.maxHeight !== "0px") {
         panel.style.maxHeight = null;
       } else {
         panel.style.maxHeight = panel.scrollHeight + "px";
